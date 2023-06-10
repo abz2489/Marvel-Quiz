@@ -18,6 +18,31 @@
         <button class="btn btn-start-quiz">Start Quiz</button>
     </div>
 
+    <!--How to play pop up using js modal-->
+    <div class="modal hidden">
+        <div id="how-to-play-modal">
+            <span class="btn-close">&times;</span>
+            <p>Welcome to the Marvel Quiz!</p>
+            <button class=" btn btn-start-quiz">Start Quiz</button>
+        </div>
+    </div>
+
+    <!--Quiz-->
+    <div class="quiz-container hidden">
+        <div id="scoreboard" class="hidden">
+            <span class="score">Score:</span>
+            <span class="score-counter"></span>
+            <span class="btn-close">&times;</span>
+        </div>
+
+        <div class="question-container">
+            <p id="question"></p>
+        </div>
+        <div class="choices-container">
+            <button type="button" id="next-btn" class="next-btn hidden"></button>
+        </div>
+    </div>
+
     <script src="assets/scripts/modal.js"></script>
     <script src="assets/scripts/questions.js"></script>
     <script type="module" src="assets/scripts/game.js"></script>
