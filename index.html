@@ -14,14 +14,14 @@
         <h1 class="header">MARVEL</h1>
     </div>
     <div class="btn-container">
-        <button class="btn btn-how-to-play">How to Play</button>
+        <button class="btn btn-how-to-play" onclick="openModal()">How to Play</button>
         <button class="btn btn-start-quiz">Start Quiz</button>
     </div>
 
     <!--How to play pop up using js modal-->
     <div class="modal hidden">
         <div id="how-to-play-modal">
-            <span class="btn-close">&times;</span>
+            <span class="btn-close" onclick="closeModal()">&times;</span>
             <p>Welcome to the Marvel Quiz!</p>
             <button class=" btn btn-start-quiz">Start Quiz</button>
         </div>
@@ -45,6 +45,6 @@
 
     <script src="assets/scripts/modal.js"></script>
     <script src="assets/scripts/questions.js"></script>
-    <script type="module" src="assets/scripts/game.js"></script>
+    <script src="assets/scripts/quiz.js"></script>
 </body>
 </html>
