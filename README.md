@@ -40,28 +40,28 @@ As a user I'm looking to play a fun and challenging quiz game.
 
 ## **Skeleton**
 
-### **Wireframes**
+### Wireframes**
 The project consists of one single page and changes states using JavaScript DOM manipulation and JS modal for any pop ups. 
 
 <details><summary>Mobile</summary>
 
-![Landing Page Mobile](assets/readme-images/wireframes/landing-page-mobile.webp)
-![How to Play Mobile](assets/readme-images/wireframes/how-to-play-mobile.webp)
-![Gameplay Mobile](assets/readme-images/wireframes/gameplay-mobile.webp)
+![Landing Page Mobile](assets/readme-images/landing-page-mobile.webp)
+![How to Play Mobile](assets/readme-images/how-to-play-mobile.webp)
+![Gameplay Mobile](assets/readme-images/gameplay-mobile.webp)
 </details>
 
 <details><summary>Tablet</summary>
 
-![Landing Page Tablet](assets/readme-images/wireframes/landing-page-tablet.webp)
-![How to Play Tablet](assets/readme-images/wireframes/how-to-play-tablet.webp)
-![Gameplay Tablet](assets/readme-images/wireframes/gameplay-tablet.webp)
+![Landing Page Tablet](assets/readme-images/landing-page-tablet.webp)
+![How to Play Tablet](assets/readme-images/how-to-play-tablet.webp)
+![Gameplay Tablet](assets/readme-images/gameplay-tablet.webp)
 </details>
 
 <details><summary>Desktop</summary>
 
-![Landing Page Desktop](assets/readme-images/wireframes/landing-page-desktop.webp)
-![How to Play Desktop](assets/readme-images/wireframes/how-to-play-desktop.webp)
-![Gameplay Desktop](assets/readme-images/wireframes/gameplay-desktop.webp)
+![Landing Page Desktop](assets/readme-images/landing-page-desktop.webp)
+![How to Play Desktop](assets/readme-images/how-to-play-desktop.webp)
+![Gameplay Desktop](assets/readme-images/gameplay-desktop.webp)
 </details>
 
 ## **Surface**
