@@ -11,6 +11,10 @@ body {
     display: none;
 }
 
+.border {
+    border: 1px solid black;
+}
+
 /* HEADER*/
 
 /* BUTTONS*/
@@ -26,4 +30,18 @@ body {
     position: absolute;
     top: 40%;
     background-color: white;
+}
+
+/*QUIZ*/
+.quiz-container {
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+}
+
+.question-container {
+    width: 80%;
+    height: 25%;
+    margin: auto;
 }
