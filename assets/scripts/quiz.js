@@ -39,4 +39,12 @@ function displayQuestion() {
     let currentQuestion = questions[currentQuestionIndex];
     console.info(currentQuestion);
     questionContent.innerHTML = currentQuestion.question;
+   
+    for (let i = 0; i < 4; i++) {
+        const button = document.createElement("button");
+        button.innerHTML = currentQuestion.choices[i].valueOf();
+        button.classList.add("choices");
+        choicesContainer.appendChild(button);
+        }
+    
 }
