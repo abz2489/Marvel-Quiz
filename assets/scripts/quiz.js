@@ -25,10 +25,18 @@ function loadQuiz() {
     scoreCounter.innerHTML = "Score: " + score;
 
     currentQuestionIndex = 0;
+
+    displayQuestion();
 }
 
 function exitQuiz() {
     quizContainer.classList.add("hidden");
     howToPlayBtn.classList.remove("hidden");
     startQuizBtn.classList.remove("hidden");
-};
+}
+
+function displayQuestion() {
+    let currentQuestion = questions[currentQuestionIndex];
+    console.info(currentQuestion);
+    questionContent.innerHTML = currentQuestion.question;
+}
