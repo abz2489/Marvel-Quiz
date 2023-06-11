@@ -8,3 +8,11 @@ const quitGame = document.querySelector(".quit-game");
 const questionContent = document.querySelector("#question");
 const nextButton = document.querySelector("#next-btn");
 const choicesContainer = document.querySelector(".choices-container");
+
+function loadQuiz() {
+    console.log("quiz starting");
+    howToPlayBtn.classList.add("hidden");
+    startQuizBtn.classList.add("hidden");
+    quizContainer.classList.remove("hidden");
+    scoreboard.classList.remove("hidden");
+}
