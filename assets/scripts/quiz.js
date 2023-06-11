@@ -9,10 +9,21 @@ const questionContent = document.querySelector("#question");
 const nextButton = document.querySelector("#next-btn");
 const choicesContainer = document.querySelector(".choices-container");
 
+let score;
+let currentQuestionIndex;
+
 function loadQuiz() {
     console.log("quiz starting");
     howToPlayBtn.classList.add("hidden");
     startQuizBtn.classList.add("hidden");
     quizContainer.classList.remove("hidden");
     scoreboard.classList.remove("hidden");
+    score = 0;
+    currentQuestionIndex = 0;
 }
+
+function exitQuiz() {
+    quizContainer.classList.add("hidden");
+    howToPlayBtn.classList.remove("hidden");
+    startQuizBtn.classList.remove("hidden");
+};
