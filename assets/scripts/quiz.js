@@ -12,13 +12,18 @@ const choicesContainer = document.querySelector(".choices-container");
 let score;
 let currentQuestionIndex;
 
+
 function loadQuiz() {
     console.log("quiz starting");
     howToPlayBtn.classList.add("hidden");
     startQuizBtn.classList.add("hidden");
     quizContainer.classList.remove("hidden");
     scoreboard.classList.remove("hidden");
+    modal.classList.add("hidden");
+
     score = 0;
+    scoreCounter.innerHTML = "Score: " + score;
+
     currentQuestionIndex = 0;
 }
 
