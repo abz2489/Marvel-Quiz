@@ -38,16 +38,24 @@ function exitQuiz() {
 function displayQuestion() {
     let currentQuestion = questions[currentQuestionIndex];
     questionContent.innerHTML = currentQuestion.question;
-   
     for (let i = 0; i < 4; i++) {
         const button = document.createElement("button");
         button.innerHTML = currentQuestion.choices[i].valueOf();
         button.classList.add("choices");
-        if (button.innerHTML == currentQuestion.correct) {
+        if (button.innerHTML === currentQuestion.correct) {
             button.dataset.correct = true;
-            console.info(button);
         }
         choicesContainer.appendChild(button);
-        }
-    
+        button.setAttribute("onclick", "checkAnswer(this)");
+    }
+}
+
+function checkAnswer(e) {
+    if (e.innerHTML === questions[currentQuestionIndex].correct) {
+        e.classList.add("correct");
+        score++;
+        scoreCounter.innerHTML = "Score: " + score;
+    } else if (e.innerHTML !== questions[currentQuestionIndex].correct) {
+        e.classList.add("wrong");
+    }
 }
