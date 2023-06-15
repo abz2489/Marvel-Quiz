@@ -9,16 +9,16 @@ const questionContent = document.querySelector("#question");
 const nextButton = document.querySelector("#next-btn");
 const choicesContainer = document.querySelector(".choices-container");
 
+let button;
 let score;
 let currentQuestionIndex;
+let currentQuestion;
 
 
 function loadQuiz() {
-    console.log("quiz starting");
     howToPlayBtn.classList.add("hidden");
     startQuizBtn.classList.add("hidden");
     quizContainer.classList.remove("hidden");
-    scoreboard.classList.remove("hidden");
     modal.classList.add("hidden");
 
     score = 0;
@@ -35,12 +35,19 @@ function exitQuiz() {
     startQuizBtn.classList.remove("hidden");
 }
 
+function clearChoices() {
+    while (choicesContainer.firstChild) {
+        choicesContainer.removeChild(choicesContainer.firstChild);
+    }
+}
+
 function displayQuestion() {
-    let currentQuestion = questions[currentQuestionIndex];
+    currentQuestion = questions[currentQuestionIndex];
     questionContent.innerHTML = currentQuestion.question;
+
     for (let i = 0; i < 4; i++) {
-        const button = document.createElement("button");
-        button.innerHTML = currentQuestion.choices[i].valueOf();
+        button = document.createElement("button");
+        button.innerHTML = currentQuestion.choices[i];
         button.classList.add("choices");
         if (button.innerHTML === currentQuestion.correct) {
             button.dataset.correct = true;
@@ -51,11 +58,13 @@ function displayQuestion() {
 }
 
 function checkAnswer(e) {
-    if (e.innerHTML === questions[currentQuestionIndex].correct) {
-        e.classList.add("correct");
+    if (e.innerHTML == questions[currentQuestionIndex].correct) {
         score++;
         scoreCounter.innerHTML = "Score: " + score;
     } else if (e.innerHTML !== questions[currentQuestionIndex].correct) {
-        e.classList.add("wrong");
     }
+    clearChoices();
+    currentQuestionIndex++;
+    displayQuestion();
 }
+
