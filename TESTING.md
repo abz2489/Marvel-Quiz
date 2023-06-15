@@ -5,6 +5,8 @@
 
 <img src="assets/testing-images/bug1-modal-overlap.webp" height="350"/>
 
+2. Previous question choices remain on screen when next question and answers have loaded. Fixed by adding a while loop to choicesContainer.firstChild. The loop removes all first children from choices container.
+
 # **Automated Testing**
 
 ## **HTML Validation**
