@@ -79,17 +79,33 @@ ___
 ## **Frameworks, libraries & programs**
 
 # **Deployment**
-
+Marvel Quiz live website was deployed using GitHub Pages.
 
 ## **Local Deployment**
 
 **How to Fork**
+- Go to GitHub repository.
+- In the top right of the screen, click the fork button.
+- A form will appear, you can edit the name and description or keep it the same.
+- Click the green "Create Fork" button.
 
 
 **How to Clone**
+- In the GitHub respository click the green Code button, that sits above the repository files.
+- When the dropdown appears choose from HTTP, SSH or GitHub CLI.
+- Click the copy button to the right of the URL to copy to your clipboard.
+- Open Git Bash / terminal, choose where you want to clone the files.
+- Type git clone and the following into the terminal https://github.com/abz2489/marvel-quiz.git
+- Press enter to create the clone.
 
 
 **Remote Deployment**
+- Sign in to GitHub or Sign Up for an account.
+- Find the woofing-walks repository.
+- Click settings.
+- Click the Pages link, found on the left hand navigation bar.
+- In the Build and Deployment section select the main branch and root folder.
+- Click Save, the live website is now deployed.
 
 
 # **Credits**
