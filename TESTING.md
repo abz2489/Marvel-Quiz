@@ -7,6 +7,8 @@
 
 2. Previous question choices remain on screen when next question and answers have loaded. Fixed by adding a while loop to choicesContainer.firstChild. The loop removes all first children from choices container.
 
+3. Game Over function doesn't execute when currentQuestionIndex is greater than or equal to questions.length. 
+
 # **Automated Testing**
 
 ## **HTML Validation**
