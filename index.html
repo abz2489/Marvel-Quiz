@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,48 +10,48 @@
     <link rel="shortcut icon" href="assets/images/captain-america-favicon.png" type="image/x-icon">
     <title>Marvel Quiz</title>
 </head>
-<body>
-    <div class="header-container">
-        <h1 class="header">MARVEL</h1>
-    </div>
-    <div class="btn-container">
-        <button class="btn btn-how-to-play" onclick="openModal()">How to Play</button>
-        <button class="btn btn-start-quiz" onclick="loadQuiz()">Start Quiz</button>
-    </div>
 
-    <!--How to play pop up using js modal-->
-    <div class="modal hidden border">
+<body>
+        <div class="header-container">
+            <h1 class="header">MARVEL</h1>
+        </div>
+        <div class="btn-container">
+            <button class="btn btn-how-to-play" onclick="openModal()">How to Play</button>
+            <button class="btn btn-start-quiz" onclick="loadQuiz()">Start Quiz</button>
+        </div>
+
+        <!--How to play pop up using js modal-->
+        <div class="modal hidden border">
             <span class="btn-close" onclick="closeModal()">&times;</span>
             <p>Welcome to the Marvel Quiz!</p>
             <button class=" btn btn-start-quiz" onclick="loadQuiz()">Start Quiz</button>
 
-    </div>
-
-    <!--Quiz-->
-    <div class="quiz-container hidden border">
-        <span class="btn-close" onclick="exitQuiz()">&times;</span>
-        <div id="scoreboard" class=" border">
-            <span class="score-counter"></span>
         </div>
 
-        <div class="question-container">
-            <p id="question"></p>
-        </div>
-        <div class="choices-container">
-            <button type="button" id="next-btn" class="next-btn hidden"></button>
-        </div>
-    </div>
+        <!--Quiz-->
+        <div class="quiz-container container hidden border">
+            <span class="btn-close" onclick="exitQuiz()">&times;</span>
+            <div id="scoreboard" class=" border">
+                <span class="score-counter"></span>
+            </div>
 
-    <!--Game Over-->
-    <div class="game-over-container hidden">
-        <h2>GAME OVER</h2>
-        <p>Final Score:</p>
-        <p class="final-score"></p>
-    </div>
+            <div class="question-container">
+                <p id="question"></p>
+            </div>
+            <div class="choices-container">
+            </div>
+        </div>
 
+        <!--Game Over-->
+        <div class="game-over-container container hidden">
+            <h2>GAME OVER</h2>
+            <p>Final Score:</p>
+            <p class="final-score"></p>
+        </div>
     <script src="assets/scripts/modal.js"></script>
     <script src="assets/scripts/quiz.js"></script>
     <script src="assets/scripts/questions.js"></script>
-    
+
 </body>
+
 </html>
