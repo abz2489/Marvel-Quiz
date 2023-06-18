@@ -42,19 +42,15 @@ function clearChoices() {
     }
 }
 
-function gameOver() {
-    quizContainer.classList.add("hidden");
-    gameOverContainer.classList.remove("hidden");
-}
-
 function displayQuestion() {
     currentQuestion = questions[currentQuestionIndex];
-    questionContent.innerHTML = questions[currentQuestionIndex].question;
 
     if (currentQuestionIndex >= questions.length) {
         gameOver();
         console.log("GAME OVER!");
     }
+
+    questionContent.innerHTML = questions[currentQuestionIndex].question;
     for (let i = 0; i < 4; i++) {
         button = document.createElement("button");
         button.innerHTML = currentQuestion.choices[i];
@@ -65,7 +61,7 @@ function displayQuestion() {
         choicesContainer.appendChild(button);
         button.setAttribute("onclick", "checkAnswer(this)");
     }
-    
+
 }
 
 function checkAnswer(e) {
@@ -76,4 +72,9 @@ function checkAnswer(e) {
     clearChoices();
     currentQuestionIndex++;
     displayQuestion();
+}
+
+function gameOver() {
+    quizContainer.classList.add("hidden");
+    gameOverContainer.classList.remove("hidden");
 }
