@@ -13,6 +13,10 @@
 
 3. Game Over function doesn't execute when currentQuestionIndex is greater than or equal to questions.length. Fixed using dev tools and setting breakpoints to walk through the displayQuestion function. questionContent.innerHTML was sitting above the if statement causing the function to attempt to load question.
 
+4. Quiz container closes when x button is pressed but the game doesn't reset. When start quiz is pressed choices multiply.
+
+<img src="assets/testing-images/bug4-exit-quiz-reset.webp" height="350"/>
+
 # **Automated Testing**
 
 ## **HTML Validation**
