@@ -42,7 +42,10 @@ function clearChoices() {
     }
 }
 
-
+function gameOver() {
+    quizContainer.classList.add("hidden");
+    gameOverContainer.classList.remove("hidden");
+}
 
 function displayQuestion() {
     currentQuestion = questions[currentQuestionIndex];
