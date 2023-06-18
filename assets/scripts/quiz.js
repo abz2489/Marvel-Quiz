@@ -9,6 +9,7 @@ const questionContent = document.querySelector("#question");
 const nextButton = document.querySelector("#next-btn");
 const choicesContainer = document.querySelector(".choices-container");
 const gameOverContainer = document.querySelector(".game-over-container");
+const finalScore = document.querySelector(".final-score");
 
 let button;
 let score;
@@ -77,4 +78,5 @@ function checkAnswer(e) {
 function gameOver() {
     quizContainer.classList.add("hidden");
     gameOverContainer.classList.remove("hidden");
+    finalScore.innerHTML = score;
 }
