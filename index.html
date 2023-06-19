@@ -21,7 +21,7 @@
         </div>
 
         <!--How to play pop up using js modal-->
-        <div class="modal hidden border">
+        <div class="modal how-to-play-modal hidden border">
             <span class="btn-close" onclick="closeModal()">&times;</span>
             <p>Welcome to the Marvel Quiz!</p>
             <button class=" btn btn-start-quiz" onclick="loadQuiz()">Start Quiz</button>
@@ -40,6 +40,13 @@
             </div>
             <div class="choices-container">
             </div>
+        </div>
+
+        <!--Quit Game Modal-->
+        <div class="modal quit-game-modal border">
+            <p>Are you sure you want to quit?</p>
+            <button class="btn yes-btn">Yes</button>
+            <button class="btn no-btn">No</button>
         </div>
 
         <!--Game Over-->
