@@ -21,7 +21,7 @@ function loadQuiz() {
     howToPlayBtn.classList.add("hidden");
     startQuizBtn.classList.add("hidden");
     quizContainer.classList.remove("hidden");
-    modal.classList.add("hidden");
+    howToPlayModal.classList.add("hidden");
 
     score = 0;
     scoreCounter.innerHTML = "Score: " + score;
