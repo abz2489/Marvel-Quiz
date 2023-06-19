@@ -24,8 +24,6 @@ function quitQuiz() {
 
 // Function to close and reset quiz when yes button is clicked
 function closeQuiz() {
-    score = 0;
-    currentQuestionIndex = 0;
     clearChoices();
     quizContainer.classList.add("hidden");
     quitGameModal.classList.add("hidden");
