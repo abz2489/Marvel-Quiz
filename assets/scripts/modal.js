@@ -11,3 +11,31 @@ function openModal() {
 function closeModal() {
     howToPlayModal.classList.add("hidden");
 };
+
+// Quit Game Modal
+const quitGameModal = document.querySelector(".quit-game-modal");
+const yesBtn = document.querySelector(".yes-btn")
+const noBtn = document.querySelector(".no-btn");
+
+// Function to quit quiz or close modal and continue
+function quitQuiz() {
+    quitGameModal.classList.remove("hidden");
+}
+
+// Function to close and reset quiz when yes button is clicked
+function closeQuiz() {
+    score = 0;
+    currentQuestionIndex = 0;
+    clearChoices();
+    quizContainer.classList.add("hidden");
+    quitGameModal.classList.add("hidden");
+    howToPlayBtn.classList.remove("hidden");
+    startQuiz.classList.remove("hidden");
+}
+
+// Function to close quit modal when no button is pressed
+function closeQuitModal() {
+    quitGameModal.classList.add("hidden");
+}
+
+
