@@ -30,7 +30,7 @@
 
         <!--Quiz-->
         <div class="quiz-container container hidden border">
-            <span class="btn-close" onclick="exitQuiz()">&times;</span>
+            <span class="btn-close" onclick="quitQuiz()">&times;</span>
             <div id="scoreboard" class=" border">
                 <span class="score-counter"></span>
             </div>
@@ -45,7 +45,7 @@
         <!--Quit Game Modal-->
         <div class="modal quit-game-modal hidden border">
             <p>Are you sure you want to quit?</p>
-            <button class="btn yes-btn">Yes</button>
+            <button class="btn yes-btn" onclick="closeQuiz()">Yes</button>
             <button class="btn no-btn">No</button>
         </div>
 
