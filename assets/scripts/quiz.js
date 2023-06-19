@@ -31,12 +31,6 @@ function loadQuiz() {
     displayQuestion();
 }
 
-function exitQuiz() {
-    quizContainer.classList.add("hidden");
-    howToPlayBtn.classList.remove("hidden");
-    startQuizBtn.classList.remove("hidden");
-}
-
 function clearChoices() {
     while (choicesContainer.firstChild) {
         choicesContainer.removeChild(choicesContainer.firstChild);
