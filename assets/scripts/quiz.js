@@ -44,18 +44,19 @@ function displayQuestion() {
     if (currentQuestionIndex >= questions.length) {
         gameOver();
         console.log("GAME OVER!");
-    }
+    } else {
 
-    questionContent.innerHTML = questions[currentQuestionIndex].question;
-    for (let i = 0; i < 4; i++) {
-        button = document.createElement("button");
-        button.innerHTML = currentQuestion.choices[i];
-        button.classList.add("choices");
-        if (button.innerHTML === currentQuestion.correct) {
-            button.dataset.correct = true;
+        questionContent.innerHTML = questions[currentQuestionIndex].question;
+        for (let i = 0; i < 4; i++) {
+            button = document.createElement("button");
+            button.innerHTML = currentQuestion.choices[i];
+            button.classList.add("choices");
+            if (button.innerHTML === currentQuestion.correct) {
+                button.dataset.correct = true;
+            }
+            choicesContainer.appendChild(button);
+            button.setAttribute("onclick", "checkAnswer(this)");
         }
-        choicesContainer.appendChild(button);
-        button.setAttribute("onclick", "checkAnswer(this)");
     }
 
 }
