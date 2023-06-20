@@ -10,6 +10,7 @@ const nextButton = document.querySelector("#next-btn");
 const choicesContainer = document.querySelector(".choices-container");
 const gameOverContainer = document.querySelector(".game-over-container");
 const finalScore = document.querySelector(".final-score");
+const playAgainBtn = document.querySelector(".play-again-btn")
 
 let button;
 let score;
@@ -73,4 +74,9 @@ function gameOver() {
     quizContainer.classList.add("hidden");
     gameOverContainer.classList.remove("hidden");
     finalScore.innerHTML = score;
+}
+
+function playAgain() {
+    gameOverContainer.classList.add("hidden");
+    loadQuiz();
 }
