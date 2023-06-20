@@ -16,6 +16,7 @@ function closeModal() {
 const quitGameModal = document.querySelector(".quit-game-modal");
 const yesBtn = document.querySelector(".yes-btn")
 const noBtn = document.querySelector(".no-btn");
+const homeBtn = document.querySelector(".home-btn");
 
 // Function to quit quiz or close modal and continue
 function quitQuiz() {
@@ -27,6 +28,7 @@ function closeQuiz() {
     clearChoices();
     quizContainer.classList.add("hidden");
     quitGameModal.classList.add("hidden");
+    gameOverContainer.classList.add("hidden")
     howToPlayBtn.classList.remove("hidden");
     startQuiz.classList.remove("hidden");
 }
