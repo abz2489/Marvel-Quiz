@@ -17,6 +17,9 @@
 
 <img src="assets/testing-images/bug4-exit-quiz-reset.webp" height="350"/>
 
+
+5. Final score isn't showing when Game Over function is called. Fixed, final-score class was missing from the relevant p element.
+
 # **Automated Testing**
 
 ## **HTML Validation**
