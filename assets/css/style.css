@@ -5,6 +5,7 @@ body {
     align-items: center;
     gap: 10rem;
     position: relative;
+    background-image: url("../images/marvel-quiz-background.png");
 }
 
 .hidden {
