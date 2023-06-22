@@ -6,57 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Oswald:wght@300&display=swap"
+        rel="stylesheet">
     <meta name="description" content="Do you have the Marvel knowledge to beat this quiz?">
     <link rel="shortcut icon" href="assets/images/captain-america-favicon.png" type="image/x-icon">
     <title>Marvel Quiz</title>
 </head>
 
 <body>
-        <div class="header-container">
-            <h1 class="header">MARVEL</h1>
-        </div>
-        <div class="btn-container">
-            <button class="btn btn-how-to-play" onclick="openModal()">How to Play</button>
-            <button class="btn btn-start-quiz" onclick="loadQuiz()">Start Quiz</button>
-        </div>
+    <div class="header-container">
+        <h1 class="header">MARVEL</h1>
+    </div>
+    <div class="btn-container">
+        <button class="btn btn-how-to-play" onclick="openModal()">How to Play</button>
+        <button class="btn btn-start-quiz" onclick="loadQuiz()">Start Quiz</button>
+    </div>
 
-        <!--How to play pop up using js modal-->
-        <div class="modal how-to-play-modal hidden border">
-            <span class="btn-close" onclick="closeModal()">&times;</span>
-            <p>Welcome to the Marvel Quiz!</p>
-            <button class=" btn btn-start-quiz" onclick="loadQuiz()">Start Quiz</button>
+    <!--How to play pop up using js modal-->
+    <div class="modal how-to-play-modal hidden border">
+        <span class="btn-close" onclick="closeModal()">&times;</span>
+        <p>Welcome to the Marvel Quiz!</p>
+        <button class=" btn btn-start-quiz" onclick="loadQuiz()">Start Quiz</button>
 
-        </div>
+    </div>
 
-        <!--Quiz-->
-        <div class="quiz-container container hidden border">
-            <span class="btn-close" onclick="quitQuiz()">&times;</span>
-            <div id="scoreboard" class=" border">
-                <span class="score-counter"></span>
-            </div>
-
-            <div class="question-container">
-                <p id="question"></p>
-            </div>
-            <div class="choices-container">
-            </div>
+    <!--Quiz-->
+    <div class="quiz-container container hidden border">
+        <span class="btn-close" onclick="quitQuiz()">&times;</span>
+        <div id="scoreboard" class=" border">
+            <span class="score-counter"></span>
         </div>
 
-        <!--Quit Game Modal-->
-        <div class="modal quit-game-modal hidden border">
-            <p>Are you sure you want to quit?</p>
-            <button class="btn yes-btn" onclick="closeQuiz()">Yes</button>
-            <button class="btn no-btn" onclick="closeQuitModal()">No</button>
+        <div class="question-container">
+            <p id="question"></p>
         </div>
+        <div class="choices-container">
+        </div>
+    </div>
 
-        <!--Game Over-->
-        <div class="game-over-container container hidden border">
-            <h2 class="game-over">GAME OVER</h2>
-            <p class="game-over">Final Score:</p>
-            <p class="game-over final-score"></p>
-            <button class="btn play-again-btn" onclick="playAgain()">Play Again</button>
-            <button class="btn home-btn" onclick="closeQuiz()">Home</button>
-        </div>
+    <!--Quit Game Modal-->
+    <div class="modal quit-game-modal hidden border">
+        <p>Are you sure you want to quit?</p>
+        <button class="btn yes-btn" onclick="closeQuiz()">Yes</button>
+        <button class="btn no-btn" onclick="closeQuitModal()">No</button>
+    </div>
+
+    <!--Game Over-->
+    <div class="game-over-container container hidden border">
+        <h2 class="game-over">GAME OVER</h2>
+        <p class="game-over">Final Score:</p>
+        <p class="game-over final-score"></p>
+        <button class="btn play-again-btn" onclick="playAgain()">Play Again</button>
+        <button class="btn home-btn" onclick="closeQuiz()">Home</button>
+    </div>
     <script src="assets/scripts/modal.js"></script>
     <script src="assets/scripts/quiz.js"></script>
     <script src="assets/scripts/questions.js"></script>
