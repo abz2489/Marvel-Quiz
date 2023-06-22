@@ -1,4 +1,7 @@
 /* GLOBAL STYLES */
+* {
+    font-family: "Bangers", cursive;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -35,6 +38,15 @@ body {
 }
 
 /* HEADER*/
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 5rem;
+    margin: 10px;
+    padding: 5px 5px;
+    background-color: #c62937;
+    color: #fffcf9;
+    text-shadow: 2rem white;
+}
 
 /* BUTTONS*/
 .btn-container {
@@ -50,7 +62,6 @@ body {
     margin-left: 10px;
     border: 3px solid black;
     position: relative;
-    font-family: 'Bangers', cursive;
     color: black;
     background-color: #fffcf9;
     font-size: 20px;
@@ -66,9 +77,6 @@ body {
     top: 0.4rem;
     z-index: -1;
 }
-
-
-
 /*HOW TO PLAY MODAL*/
 .modal {
     z-index: 2;
