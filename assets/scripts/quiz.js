@@ -50,7 +50,7 @@ function displayQuestion() {
         for (let i = 0; i < 4; i++) {
             button = document.createElement("button");
             button.innerHTML = currentQuestion.choices[i];
-            button.classList.add("choices");
+            button.classList.add("choices", "btn");
             if (button.innerHTML === currentQuestion.correct) {
                 button.dataset.correct = true;
             }
