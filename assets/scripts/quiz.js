@@ -11,6 +11,7 @@ const choicesContainer = document.querySelector(".choices-container");
 const gameOverContainer = document.querySelector(".game-over-container");
 const finalScore = document.querySelector(".final-score");
 const playAgainBtn = document.querySelector(".play-again-btn")
+const background = document.querySelector("body");
 
 let button;
 let score;
@@ -45,7 +46,6 @@ function displayQuestion() {
         gameOver();
         console.log("GAME OVER!");
     } else {
-
         questionContent.innerHTML = questions[currentQuestionIndex].question;
         for (let i = 0; i < 4; i++) {
             button = document.createElement("button");
@@ -63,12 +63,21 @@ function displayQuestion() {
 
 function checkAnswer(e) {
     if (e.innerHTML == questions[currentQuestionIndex].correct) {
+        background.classList.add("correct");
         score++;
         scoreCounter.innerHTML = "Score: " + score;
-    } else if (e.innerHTML !== questions[currentQuestionIndex].correct) {}
-    clearChoices();
-    currentQuestionIndex++;
-    displayQuestion();
+    } else if (e.innerHTML !== questions[currentQuestionIndex].correct) {
+        background.classList.add("wrong");
+    }
+
+    function nextQuestion() {
+        background.classList.remove("correct");
+        background.classList.remove("wrong");
+        clearChoices();
+        currentQuestionIndex++;
+        displayQuestion();
+    }
+    setTimeout(nextQuestion, 700);
 }
 
 function gameOver() {
