@@ -25,6 +25,7 @@ body {
     position: absolute;
     top: 60%;
     background-color: #fffcf9;
+    z-index: 0;
 }
 
 .btn-close {
@@ -35,11 +36,11 @@ body {
 }
 
 .correct {
-    background-color: green;
+    background-image: url("../images/marvel-quiz-background-correct.png");
 }
 
 .wrong {
-    background-color: red;
+    background-image: url("../images/marvel-quiz-background-wrong.png");
 }
 
 /* HEADER*/
@@ -47,7 +48,7 @@ h1 {
     font-family: 'Anton', sans-serif;
     font-size: 5rem;
     margin: 10px;
-    padding: 5px 5px;
+    padding: 5px 15px;
     background-color: #c62937;
     color: #fffcf9;
     text-shadow: 2rem white;
