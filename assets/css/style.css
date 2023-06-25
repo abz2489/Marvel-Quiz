@@ -3,6 +3,7 @@
     font-family: "Bangers", cursive;
     font-size: 1.12rem;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -44,6 +45,9 @@ body {
     right: 2%;
     padding-right: 2px;
     font-size: 1.5em;
+    transition-property: transform;
+    transition-duration: 2s;
+    cursor: default;
 }
 
 .correct {
@@ -82,12 +86,6 @@ h1 {
     position: relative;
     color: #242124;;
     background-color: #fffcf9;
-    transition-property: background-color;
-    transition-duration: 0.5s;
-    transition-property: color;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in;
-    
 }
 
 .btn::before {
@@ -99,24 +97,13 @@ h1 {
     left: -0.4rem;
     top: 0.4rem;
     z-index: -1;
-    transition-property: opacity;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in;
-}
-
-.btn:hover {
-    background-color: #242124;
-    color: #fffcf9;
-}
-
-.btn:hover::before {
-    opacity: 0.6;
 }
 
 .btn-smaller {
     width: 6rem;
     height: 2rem;
 }
+
 /*HOW TO PLAY MODAL*/
 .how-to-play-modal {
     position: absolute;
@@ -179,4 +166,31 @@ h1 {
 
 .hidden {
     display: none;
+}
+
+/*MEDIA QUERIES*/
+@media (hover:hover) {
+    .btn {
+        transition-property: background-color, color;
+        transition-duration: 0.5s;
+    }
+
+    .btn:hover {
+        background-color: #242124;
+        color: #fffcf9;
+    }
+
+    .btn::before {
+        transition-property: opacity;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+    }
+
+    .btn:hover::before {
+        opacity: 0.4;
+    }
+
+    .btn-close:hover {
+        transform: rotate(360deg);
+    }
 }
