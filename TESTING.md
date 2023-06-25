@@ -20,6 +20,8 @@
 
 5. Final score isn't showing when Game Over function is called. Fixed, final-score class was missing from the relevant p element.
 
+6. Btn and btn-close hover effects won't function as intended on touch screen devices. Fixed by adding hover effects to media queries specifying devices with hover capabilities. 
+
 # **Automated Testing**
 
 ## **HTML Validation**
