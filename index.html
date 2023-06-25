@@ -25,10 +25,12 @@
     </div>
 
     <!--How to play pop up using js modal-->
-    <div class="modal how-to-play-modal hidden border">
+    <div class="container how-to-play-modal hidden border">
         <span class="btn-close" onclick="closeModal()">&times;</span>
-        <p>Welcome to the Marvel Quiz!</p>
-        <button class=" btn btn-start-quiz" onclick="loadQuiz()">Start Quiz</button>
+        <p class="large-font welcome">Welcome to the Marvel Quiz!</p>
+        <p class="instructions">Click Start Quiz to test your Marvel knowledge. Each question will display four possible answers to choose
+            from. There will be a total of ten questions.</p>
+        <button class=" btn btn-start-quiz btn-smaller" onclick="loadQuiz()">Start Quiz</button>
 
     </div>
 
@@ -36,7 +38,6 @@
     <div class="quiz-container container hidden border">
         <span class="btn-close" onclick="quitQuiz()">&times;</span>
         <div id="scoreboard">
-            
             <span class="score-counter"></span>
         </div>
 
@@ -48,19 +49,19 @@
     </div>
 
     <!--Quit Game Modal-->
-    <div class="modal quit-game-modal hidden border">
-        <p>Are you sure you want to quit?</p>
-        <button class="btn yes-btn" onclick="closeQuiz()">Yes</button>
-        <button class="btn no-btn" onclick="closeQuitModal()">No</button>
+    <div class="container quit-game-modal hidden border">
+        <p class=" quit-question large-font">Are you sure you want to quit?</p>
+        <button class="btn yes-btn btn-smaller" onclick="closeQuiz()">Yes</button>
+        <button class="btn no-btn btn-smaller" onclick="closeQuitModal()">No</button>
     </div>
 
     <!--Game Over-->
     <div class="game-over-container container hidden border">
-        <h2 class="game-over">GAME OVER</h2>
-        <p class="game-over">Final Score:</p>
-        <p class="game-over final-score"></p>
-        <button class="btn play-again-btn" onclick="playAgain()">Play Again</button>
-        <button class="btn home-btn" onclick="closeQuiz()">Home</button>
+        <h2 class="game-over extra-large-font">GAME OVER</h2>
+        <p class="game-over extra-large-font">Final Score:</p>
+        <p class="game-over final-score extra-large-font"></p>
+        <button class="btn play-again-btn btn-smaller" onclick="playAgain()">Play Again</button>
+        <button class="btn home-btn btn-smaller" onclick="closeQuiz()">Home</button>
     </div>
     <script src="assets/scripts/modal.js"></script>
     <script src="assets/scripts/quiz.js"></script>
