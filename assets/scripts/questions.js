@@ -12,7 +12,7 @@ const easy = [
     },
 
     {
-        "question": "Which country is the birthplace of Black Widow",
+        "question": "Which country is the birthplace of Black Widow?",
         "choices": ["Canada" ,"America" ,"South Africa" ,"Russia"],
         "correct": "Russia"
     },
@@ -62,7 +62,7 @@ const easy = [
 
 const medium = [
     {
-        "question": "Who is the brother of Scarlet Witch",
+        "question": "Who is the brother of Scarlet Witch?",
         "choices": ["Quicksilver", "Mercury", "Cobalt", "Aluminium"],
         "correct": "Quicksilver"
     },
@@ -119,5 +119,67 @@ const medium = [
         "question": "\"With great power comes great responsibility\" is said by which character?",
         "choices": ["Uncle Ben", "Frigga", "Captain America", "Bruce Banner"],
         "correct": "Uncle Ben"
+    },
+];
+
+const hard = [
+    {
+        "question": "Who kills Aunt May in Spider-Man: No Way Home?",
+        "choices": ["Dr Octopus", "Electro", "Lizard", "Green Goblin"],
+        "correct": "Green Goblin"
+    },
+
+    {
+        "question": "What is the name of the Hippopotamus goddes in Moon Knight?",
+        "choices": ["Bastet", "Amunet", "Tawaret", "Hathor"],
+        "correct": "Tawaret"
+    },
+
+    {
+        "question": "In which year was the first Marvel Comic released?",
+        "choices": ["1998", "1963", "1971", "1939"],
+        "correct": "1939"
+    },
+
+    {
+        "question": "How many years was Steve Rogers trapped under the ice?",
+        "choices": ["5", "28", "87", "66"],
+        "correct": "66"
+    },
+
+    {
+        "question": "Which infinity stone do the Guardians have to save in Guardians of the Galaxy Vol. 1?",
+        "choices": ["The Soul Stone", "The Power Stone", "The Reality Stone", "The Mind Stone"],
+        "correct": "The Power Stone"
+    },
+
+    {
+        "question": "What is the name of the dwarf who made Thanos’s gauntlet?",
+        "choices": ["Tyrion", "Trumpkin", "Eitri", "Finbar"],
+        "correct": "Eitri"
+    },
+
+    {
+        "question": "Which of these isn't made of Vibranium?",
+        "choices": ["Vision", "Mjolnir", "Bucky's Arm", "Captain America's Shield"],
+        "correct": "Mjolnir"
+    },
+
+    {
+        "question": "What is Pepper Potts allergic to?",
+        "choices": ["Pepper", "Shellfish", "Strawberries", "Nuts"],
+        "correct": "Strawberries"
+    },
+
+    {
+        "question": "Who isn't a member of The Warriors Three?",
+        "choices": ["Heimdal", "Fandral", "Hogun", "Volstaag"],
+        "correct": "Heimdal"
+    },
+
+    {
+        "question": "Stan Lee made his final cameo in which Marvel movie?",
+        "choices": ["Guardians of the Galaxy Vol 2", "Avengers: Infinity War", "Thor: The Dark World", "Avengers: End Game"],
+        "correct": "Avengers: End Game"
     },
 ];
