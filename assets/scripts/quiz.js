@@ -17,9 +17,10 @@ let button;
 let score;
 let currentQuestionIndex;
 let currentQuestion;
+let quizQuestions
 
 
-function loadQuiz() {
+function loadQuiz(questions) {
     howToPlayBtn.classList.add("hidden");
     startQuizBtn.classList.add("hidden");
     quizContainer.classList.remove("hidden");
@@ -27,7 +28,7 @@ function loadQuiz() {
 
     score = 0;
     scoreCounter.innerHTML = "Score: " + score;
-
+    quizQuestions = questions;
     currentQuestionIndex = 0;
 
     displayQuestion();
@@ -40,18 +41,17 @@ function clearChoices() {
 }
 
 function displayQuestion() {
-    currentQuestion = questions[currentQuestionIndex];
 
-    if (currentQuestionIndex >= questions.length) {
+    if (currentQuestionIndex >= quizQuestions.length) {
         gameOver();
         console.log("GAME OVER!");
     } else {
-        questionContent.innerHTML = questions[currentQuestionIndex].question;
+        questionContent.innerHTML = quizQuestions[currentQuestionIndex].question;
         for (let i = 0; i < 4; i++) {
             button = document.createElement("button");
-            button.innerHTML = currentQuestion.choices[i];
+            button.innerHTML = quizQuestions[currentQuestionIndex].choices[i];
             button.classList.add("choices", "btn");
-            if (button.innerHTML === currentQuestion.correct) {
+            if (button.innerHTML === quizQuestions[currentQuestionIndex].correct) {
                 button.dataset.correct = true;
             }
             choicesContainer.appendChild(button);
@@ -62,11 +62,11 @@ function displayQuestion() {
 }
 
 function checkAnswer(e) {
-    if (e.innerHTML == questions[currentQuestionIndex].correct) {
+    if (e.innerHTML == quizQuestions[currentQuestionIndex].correct) {
         background.classList.add("correct");
         score++;
         scoreCounter.innerHTML = "Score: " + score;
-    } else if (e.innerHTML !== questions[currentQuestionIndex].correct) {
+    } else if (e.innerHTML !== quizQuestions[currentQuestionIndex].correct) {
         background.classList.add("wrong");
     }
 
