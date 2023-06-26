@@ -1,4 +1,4 @@
-const questions = [
+const easy = [
     {
         "question": "How many infinity stones are there in the Marvel Universe?",
         "choices": ["10", "6","3","8"],
@@ -58,4 +58,66 @@ const questions = [
         "choices": ["Thanos", "Ego", "Abomination", "Loki"],
         "correct": "Loki"
     }
+];
+
+const medium = [
+    {
+        "question": "Who is the brother of Scarlet Witch",
+        "choices": ["Quicksilver", "Mercury", "Cobalt", "Aluminium"],
+        "correct": "Quicksilver"
+    },
+
+    {
+        "question": "In which MCU movie did Spiderman first appear?",
+        "choices": ["Avengers: Infinity War", "Ant-Man", "Spider-Man: Homecoming", "Captain America: Civil War"],
+        "correct": "Captain America: Civil War"
+    },
+
+    {
+        "question": "Who is the head of S.H.I.E.L.D?",
+        "choices": ["Phil Coulson", "Nick Fury", "Clint Barton", "Sharon Carter"],
+        "correct": "Nick Fury"
+    },
+
+    {
+        "question": "Who did Captain America fall in love with?",
+        "choices": ["Pepper Potts", "Peggy Carter", "May Barker", "Wanda Maximoff"],
+        "correct": "Peggy Carter"
+    },
+
+    {
+        "question": "What does Stan Lee cameo as in Guardians of the Galaxy Vol. 2?",
+        "choices": ["Quill's farther", "A Ravager", "An Astronaut", "A Krylorian"],
+        "correct": "An Astronaut"
+    },
+
+    {
+        "question": "In Loki, what does the TVA stand for?",
+        "choices": ["Tesseract Viability Access", "Time Variant Access", "Time Variant Authority", "Thor Visits Asgard"],
+        "correct": "Time Variant Authority"
+    },
+
+    {
+        "question": "What was Scott Lang Arrested for?",
+        "choices": ["Burglary", "Arson", "Criminal Damage", "Fraud"],
+        "correct": "Burglary"
+    },
+
+    {
+        "question": "Which of the following actors hasn't played The Hulk?",
+        "choices": ["Mark Ruffalo", "Edward Norton", "Eric Bana", "Henry Cavill"],
+        "correct": "Henry Cavill"
+    },
+
+    {
+        "question": "How old is Thor revealed to be in Avengers: Infinity War?",
+        "choices": ["150", "1,500", "36", "3012"],
+        "correct": "1,500"
+    },
+
+    {
+        "question": "\"With great power comes great responsibility\" is said by which character?",
+        "choices": ["Uncle Ben", "Frigga", "Captain America", "Bruce Banner"],
+        "correct": "Uncle Ben"
+    },
 ];
