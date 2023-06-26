@@ -21,7 +21,7 @@
     </div>
     <div class="btn-container">
         <button class="btn btn-how-to-play" onclick="openModal()">How to Play</button>
-        <button class="btn btn-start-quiz" onclick="loadQuiz()">Start Quiz</button>
+        <button class="btn btn-start-quiz" onclick="selectDifficulty()">Start Quiz</button>
     </div>
 
     <!--How to play pop up using js modal-->
@@ -30,12 +30,12 @@
         <p class="large-font welcome">Welcome to the Marvel Quiz!</p>
         <p class="instructions">Click Start Quiz to test your Marvel knowledge. Each question will display four possible answers to choose
             from. There will be a total of ten questions.</p>
-        <button class=" btn btn-start-quiz btn-smaller" onclick="loadQuiz()">Start Quiz</button>
+        <button class=" btn btn-start-quiz btn-smaller" onclick="selectDifficulty()">Start Quiz</button>
 
     </div>
 
     <!--Difficulty-->
-    <div class="container difficulty-container border">
+    <div class="container difficulty-container border hidden">
         <p class="large-font">Select Level</p>
         <button class="btn btn-smaller" onclick="loadQuiz(easy)">Easy</button>
         <button class="btn btn-smaller" onclick="loadQuiz(medium)">Medium</button>
