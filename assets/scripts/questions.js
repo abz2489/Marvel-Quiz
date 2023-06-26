@@ -58,4 +58,4 @@ const questions = [
         "choices": ["Thanos", "Ego", "Abomination", "Loki"],
         "correct": "Loki"
     }
-]
+];

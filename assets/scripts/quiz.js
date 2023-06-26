@@ -10,7 +10,7 @@ const nextButton = document.querySelector("#next-btn");
 const choicesContainer = document.querySelector(".choices-container");
 const gameOverContainer = document.querySelector(".game-over-container");
 const finalScore = document.querySelector(".final-score");
-const playAgainBtn = document.querySelector(".play-again-btn")
+const playAgainBtn = document.querySelector(".play-again-btn");
 const background = document.querySelector("body");
 
 let button;

@@ -5,16 +5,16 @@ const startQuiz = document.querySelector(".btn-start-quiz");
 // Function to open how to Play modal
 function openModal() {
     howToPlayModal.classList.remove("hidden");
-};
+}
 
 // Function to close How to Play modal
 function closeModal() {
     howToPlayModal.classList.add("hidden");
-};
+}
 
 // Quit Game Modal
 const quitGameModal = document.querySelector(".quit-game-modal");
-const yesBtn = document.querySelector(".yes-btn")
+const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 const homeBtn = document.querySelector(".home-btn");
 
@@ -28,7 +28,7 @@ function closeQuiz() {
     clearChoices();
     quizContainer.classList.add("hidden");
     quitGameModal.classList.add("hidden");
-    gameOverContainer.classList.add("hidden")
+    gameOverContainer.classList.add("hidden");
     howToPlayBtn.classList.remove("hidden");
     startQuiz.classList.remove("hidden");
 }
@@ -37,5 +37,3 @@ function closeQuiz() {
 function closeQuitModal() {
     quitGameModal.classList.add("hidden");
 }
-
-
