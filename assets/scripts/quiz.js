@@ -12,6 +12,7 @@ const gameOverContainer = document.querySelector(".game-over-container");
 const finalScore = document.querySelector(".final-score");
 const playAgainBtn = document.querySelector(".play-again-btn");
 const background = document.querySelector("body");
+const difficultyContainer = document.querySelector(".difficulty-container");
 
 let button;
 let score;
@@ -19,8 +20,12 @@ let currentQuestionIndex;
 let currentQuestion;
 let quizQuestions
 
+function selectDifficulty() {
+    difficultyContainer.classList.remove("hidden");
+}
 
 function loadQuiz(questions) {
+    difficultyContainer.classList.add("hidden");
     howToPlayBtn.classList.add("hidden");
     startQuizBtn.classList.add("hidden");
     quizContainer.classList.remove("hidden");
@@ -41,7 +46,6 @@ function clearChoices() {
 }
 
 function displayQuestion() {
-
     if (currentQuestionIndex >= quizQuestions.length) {
         gameOver();
         console.log("GAME OVER!");
