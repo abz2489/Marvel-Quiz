@@ -18,28 +18,29 @@
 <body>
     <div class="header-container">
         <h1 class="header">MARVEL</h1>
+        <img class="quiz-logo" src="assets/images/quiz-logo.png" alt="Quiz logo displays as comic exlposion">
     </div>
     <div class="btn-container">
-        <button class="btn btn-how-to-play" onclick="openModal()">How to Play</button>
-        <button class="btn btn-start-quiz" onclick="selectDifficulty()">Start Quiz</button>
+        <button class="btn btn-how-to-play larger-font" onclick="openModal()">How to Play</button>
+        <button class="btn btn-start-quiz larger-font" onclick="selectDifficulty()">Start Quiz</button>
     </div>
 
     <!--How to play pop up using js modal-->
     <div class="container how-to-play-modal hidden border">
         <span class="btn-close" onclick="closeModal()">&times;</span>
-        <p class="large-font welcome">Welcome to the Marvel Quiz!</p>
+        <p class="extra-large-font welcome">Welcome to the Marvel Quiz!</p>
         <p class="instructions">Click Start Quiz to test your Marvel knowledge. Each question will display four possible answers to choose
             from. There will be a total of ten questions.</p>
-        <button class=" btn btn-start-quiz btn-smaller" onclick="selectDifficulty()">Start Quiz</button>
+        <button class=" btn btn-start-quiz" onclick="selectDifficulty()">Start Quiz</button>
 
     </div>
 
     <!--Difficulty-->
     <div class="container difficulty-container border hidden">
-        <p class="large-font">Select Level</p>
-        <button class="btn btn-smaller" onclick="loadQuiz(easy)">Easy</button>
-        <button class="btn btn-smaller" onclick="loadQuiz(medium)">Medium</button>
-        <button class="btn btn-smaller" onclick="loadQuiz(hard)">Hard</button>
+        <p class="extra-large-font">Select Level</p>
+        <button class="btn" onclick="loadQuiz(easy)">Easy</button>
+        <button class="btn" onclick="loadQuiz(medium)">Medium</button>
+        <button class="btn" onclick="loadQuiz(hard)">Hard</button>
     </div>
 
     <!--Quiz-->
@@ -58,9 +59,9 @@
 
     <!--Quit Game Modal-->
     <div class="container quit-game-modal hidden border">
-        <p class=" quit-question large-font">Are you sure you want to quit?</p>
-        <button class="btn yes-btn btn-smaller" onclick="closeQuiz()">Yes</button>
-        <button class="btn no-btn btn-smaller" onclick="closeQuitModal()">No</button>
+        <p class=" quit-question extra-large-font">Are you sure you want to quit?</p>
+        <button class="btn yes-btn" onclick="closeQuiz()">Yes</button>
+        <button class="btn no-btn" onclick="closeQuitModal()">No</button>
     </div>
 
     <!--Game Over-->
@@ -68,8 +69,8 @@
         <h2 class="game-over extra-large-font">GAME OVER</h2>
         <p class="game-over extra-large-font">Final Score:</p>
         <p class="game-over final-score extra-large-font"></p>
-        <button class="btn play-again-btn btn-smaller" onclick="playAgain()">Play Again</button>
-        <button class="btn home-btn btn-smaller" onclick="closeQuiz()">Home</button>
+        <button class="btn play-again-btn" onclick="playAgain()">Play Again</button>
+        <button class="btn home-btn" onclick="closeQuiz()">Home</button>
     </div>
     <script src="assets/scripts/modal.js"></script>
     <script src="assets/scripts/quiz.js"></script>
