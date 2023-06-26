@@ -24,7 +24,7 @@ body {
     height: 400px;
     width: 310px;
     position: absolute;
-    top: 60%;
+    top: 70%;
     background-color: #fffcf9;
     z-index: 0;
     display: flex;
@@ -59,14 +59,48 @@ body {
 }
 
 /* HEADER*/
-h1 {
+.header-container {
+    position: relative;
+}
+
+.header {
+    width: 50;
     font-family: 'Anton', sans-serif;
     font-size: 5rem;
-    margin: 8px;
-    padding: 5px 15px;
+    text-align: center;
+    margin: 7px;
+    padding: 3px 8px;
     background-color: #c62937;
     color: #fffcf9;
 }
+
+.quiz-logo {
+   height: 90%;
+   width: 70%; 
+   position: absolute;
+   top: 75%;
+   left: 40%;
+   transform: rotatez('20deg');
+   animation: quiz-logo 2s 2;
+}
+
+@keyframes quiz-logo {
+    0% {
+      transform: rotatez(0);
+    }
+    25% {
+        transform: rotatez(20deg);
+    }
+    50% {
+        transform: rotatez(0);
+    }
+    75% { 
+        transform: rotatez(-20deg);
+    }
+    100% {
+      transform: rotatez(0);
+    }
+  }
 
 /* BUTTONS*/
 .btn-container {
@@ -106,7 +140,7 @@ h1 {
 /*HOW TO PLAY MODAL*/
 .how-to-play-modal {
     position: absolute;
-    top: 49%;
+    top: 59%;
 }
 
 .welcome {
@@ -115,6 +149,12 @@ h1 {
 
 .instructions {
     padding-left: 0.8rem;
+}
+
+/*SELECT DIFFICULTY*/
+.difficulty-container {
+    position: absolute;
+    top: 59%;
 }
 
 /*QUIZ*/
@@ -152,6 +192,9 @@ h1 {
 }
 
 /*QUIT QUIZ*/
+.quit-question {
+    text-align: center;
+}
 /*GAME OVER*/
 .game-over-container {
     display: flex;
