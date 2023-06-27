@@ -13,12 +13,13 @@
 As a user I'm looking to play a fun and challenging quiz game. 
 
 ### **User Stories**
-- As a user I want to quickly identify what sort of game is.
-- As a user I want to access the rules of the game easily.
+- As a user I want to quickly identify what sort of game it is.
+- As a user I want to learn how to play easily.
 - As a user I want to access the "Start Game" button easily.
 - As a user I want to track my score as I play.
 - As a user I want to be able to quit the game.
 - As a user I want to be alerted when I get the answer right or wrong.
+- As a user I want to be able to select a level of difficulty.
 
 ## **Scope**
 
@@ -31,9 +32,9 @@ As a user I'm looking to play a fun and challenging quiz game.
 - Colour indicator for correct / incorrect answers
 
 ### **Future Features**
-- Varying levels of difficulty
 - Allow user to sign in with username
-- Sound indicator for correct / incorrect answers
+- Allow user to save their score
+- Sound effects for correct / incorrect answers
 
 
 ## **Structure**
