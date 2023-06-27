@@ -18,7 +18,7 @@ let button;
 let score;
 let currentQuestionIndex;
 let currentQuestion;
-let quizQuestions
+let quizQuestions;
 
 function selectDifficulty() {
     difficultyContainer.classList.remove("hidden");
