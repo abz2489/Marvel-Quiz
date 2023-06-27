@@ -22,6 +22,7 @@
 
 6. Btn and btn-close hover effects won't function as intended on touch screen devices. Fixed by adding hover effects to media queries specifying devices with hover capabilities. 
 
+
 # **Automated Testing**
 
 ## **HTML Validation**
@@ -50,4 +51,27 @@ ___
 
 
 ## **Feature Testing**
-___
+
+### **Homepage**
+|**Feature**|**Expected Result**|**Test Performed**|**Result**|**Pass/Fail**|
+|---|---|---|---|---|
+
+### **How to Play Modal**
+|**Feature**|**Expected Result**|**Test Performed**|**Result**|**Pass/Fail**|
+|---|---|---|---|---|
+
+### **Select Difficulty Container**
+|**Feature**|**Expected Result**|**Test Performed**|**Result**|**Pass/Fail**|
+|---|---|---|---|---|
+
+### **Quiz Container**
+|**Feature**|**Expected Result**|**Test Performed**|**Result**|**Pass/Fail**|
+|---|---|---|---|---|
+
+### **Quit Quiz**
+|**Feature**|**Expected Result**|**Test Performed**|**Result**|**Pass/Fail**|
+|---|---|---|---|---|
+
+### **Game Over**
+|**Feature**|**Expected Result**|**Test Performed**|**Result**|**Pass/Fail**|
+|---|---|---|---|---|
