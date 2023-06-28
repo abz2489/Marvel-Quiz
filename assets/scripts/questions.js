@@ -24,13 +24,13 @@ const easy = [
     },
 
     {
-        "question": "Who was able to pick up Thor’s sword in Avengers: Endgame?",
+        "question": "Who was able to pick up Thor's sword in Avengers: Endgame?",
         "choices": ["Hulk", "Captain America", "Captain Marvel", "Spiderman"],
         "correct": "Captain America"
     },
 
     {
-        "question": "What is Thor’s ax’s name that was created for him in Avengers: Infinity War?",
+        "question": "What is Thor's ax's name that was created for him in Avengers: Infinity War?",
         "choices": ["Heartbreaker", "Windbreaker", "Stormbreaker", "Mjölnir"],
         "correct": "Stormbreaker"
     },
@@ -42,13 +42,13 @@ const easy = [
     },
 
     {
-        "question": "What’s the name of Tony Stark’s company?",
+        "question": "What's the name of Tony Stark's company?",
         "choices": ["Stark Enterprise", "Stark Worldwide", "Stark Industries", "Stark Superheroes"],
         "correct": "Stark Industries"
     },
 
     {
-        "question": "What is T’Challa’s sister’s name?",
+        "question": "What is T'Challa's sister's name?",
         "choices": ["Shari", "Shaba", "Shami", "Shuri"],
         "correct": "Shuri"
     },
@@ -154,7 +154,7 @@ const hard = [
     },
 
     {
-        "question": "What is the name of the dwarf who made Thanos’s gauntlet?",
+        "question": "What is the name of the dwarf who made Thanos's gauntlet?",
         "choices": ["Tyrion", "Trumpkin", "Eitri", "Finbar"],
         "correct": "Eitri"
     },

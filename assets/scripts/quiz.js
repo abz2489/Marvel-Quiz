@@ -48,7 +48,6 @@ function clearChoices() {
 function displayQuestion() {
     if (currentQuestionIndex >= quizQuestions.length) {
         gameOver();
-        console.log("GAME OVER!");
     } else {
         questionContent.innerHTML = quizQuestions[currentQuestionIndex].question;
         for (let i = 0; i < 4; i++) {
@@ -73,14 +72,15 @@ function checkAnswer(e) {
     } else if (e.innerHTML !== quizQuestions[currentQuestionIndex].correct) {
         background.classList.add("wrong");
     }
+    nextQuestion();
+}
 
-    function nextQuestion() {
-        background.classList.remove("correct");
-        background.classList.remove("wrong");
-        clearChoices();
-        currentQuestionIndex++;
-        displayQuestion();
-    }
+function nextQuestion() {
+    background.classList.remove("correct");
+    background.classList.remove("wrong");
+    clearChoices();
+    currentQuestionIndex++;
+    displayQuestion();
     setTimeout(nextQuestion, 700);
 }
 
