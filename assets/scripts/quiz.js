@@ -72,7 +72,7 @@ function checkAnswer(e) {
     } else if (e.innerHTML !== quizQuestions[currentQuestionIndex].correct) {
         background.classList.add("wrong");
     }
-    nextQuestion();
+    setTimeout(nextQuestion, 300);
 }
 
 function nextQuestion() {
@@ -80,8 +80,7 @@ function nextQuestion() {
     background.classList.remove("wrong");
     clearChoices();
     currentQuestionIndex++;
-    displayQuestion();
-    setTimeout(nextQuestion, 700);
+    displayQuestion();  
 }
 
 function gameOver() {
