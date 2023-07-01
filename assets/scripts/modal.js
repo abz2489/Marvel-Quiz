@@ -37,3 +37,13 @@ function closeQuiz() {
 function closeQuitModal() {
     quitGameModal.classList.add("hidden");
 }
+
+// Quit difficulty selection
+const difficultySelect = document.querySelector(".difficulty-container");
+
+// Function to close difficulty select container when pressed
+function closeDifficultySelect() {
+    difficultySelect.classList.add("hidden");
+    howToPlayBtn.classList.remove("hidden");
+    startQuiz.classList.remove("hidden");
+}
