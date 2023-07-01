@@ -37,6 +37,7 @@
 
     <!--Difficulty-->
     <div class="container difficulty-container border hidden">
+        <span class="btn-close" onclick="closeDifficultySelect()">&times;</span>
         <p class="extra-large-font">Select Level</p>
         <button class="btn" onclick="loadQuiz(easy)">Easy</button>
         <button class="btn" onclick="loadQuiz(medium)">Medium</button>
@@ -65,7 +66,7 @@
     </div>
 
     <!--Game Over-->
-    <div class="game-over-container container hidden border">
+    <div class="container game-over-container hidden border">
         <h2 class="game-over extra-large-font">GAME OVER</h2>
         <p class="game-over extra-large-font">Final Score:</p>
         <p class="game-over final-score extra-large-font"></p>
