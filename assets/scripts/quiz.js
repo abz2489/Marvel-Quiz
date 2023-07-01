@@ -60,8 +60,8 @@ function displayQuestion() {
             choicesContainer.appendChild(button);
             button.setAttribute("onclick", "checkAnswer(this)");
         }
-    }
 
+    }
 }
 
 function checkAnswer(e) {
@@ -80,7 +80,7 @@ function nextQuestion() {
     background.classList.remove("wrong");
     clearChoices();
     currentQuestionIndex++;
-    displayQuestion();  
+    displayQuestion();
 }
 
 function gameOver() {
@@ -91,5 +91,5 @@ function gameOver() {
 
 function playAgain() {
     gameOverContainer.classList.add("hidden");
-    loadQuiz();
+    selectDifficulty();
 }
