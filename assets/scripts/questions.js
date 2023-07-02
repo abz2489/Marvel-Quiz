@@ -1,7 +1,7 @@
 const easy = [
     {
         "question": "How many infinity stones are there in the Marvel Universe?",
-        "choices": ["10", "6","3","8"],
+        "choices": ["10","6","3","8"],
         "correct": "6"
     },
  
