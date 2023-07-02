@@ -14,14 +14,11 @@ const playAgainBtn = document.querySelector(".play-again-btn");
 const background = document.querySelector("body");
 const difficultyContainer = document.querySelector(".difficulty-container");
 
-let button;
-let score;
-let currentQuestionIndex;
-let currentQuestion;
-let quizQuestions;
+let button, score, currentQuestionIndex, currentQuestion, quizQuestions;
 
 function selectDifficulty() {
     difficultyContainer.classList.remove("hidden");
+    howToPlayModal.classList.add("hidden");
 }
 
 function loadQuiz(questions) {
@@ -29,7 +26,6 @@ function loadQuiz(questions) {
     howToPlayBtn.classList.add("hidden");
     startQuizBtn.classList.add("hidden");
     quizContainer.classList.remove("hidden");
-    howToPlayModal.classList.add("hidden");
 
     score = 0;
     scoreCounter.innerHTML = "Score: " + score;
