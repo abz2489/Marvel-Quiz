@@ -320,6 +320,7 @@ body {
 
     .how-to-play-modal {
         top: 50%;
+        width: 360px;
     }
 
     .header {
