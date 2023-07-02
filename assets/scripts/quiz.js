@@ -56,7 +56,6 @@ function displayQuestion() {
             choicesContainer.appendChild(button);
             button.setAttribute("onclick", "checkAnswer(this)");
         }
-
     }
 }
 
@@ -68,7 +67,7 @@ function checkAnswer(e) {
     } else if (e.innerHTML !== quizQuestions[currentQuestionIndex].correct) {
         background.classList.add("wrong");
     }
-    setTimeout(nextQuestion, 300);
+    setTimeout(nextQuestion, 350);
 }
 
 function nextQuestion() {
