@@ -14,6 +14,7 @@ body {
     background-image: url("../images/marvel-quiz-background.png");
 }
 
+/*Comic style border found https://codepen.io/mp/pen/kBEeKw*/
 .border {
     border-style: solid;
     border-color: #242124;
@@ -63,48 +64,6 @@ body {
     display: none;
 }
 
-/* HEADER*/
-.header-container {
-    position: relative;
-}
-
-.header {
-    font-family: 'Anton', sans-serif;
-    font-size: 5rem;
-    text-align: center;
-    margin: 0.4rem;
-    padding: 0.1rem 0.5rem;
-    background-color: #c62937;
-    color: #fffcf9;
-}
-
-.quiz-logo {
-   height: 90%;
-   width: 70%; 
-   position: absolute;
-   top: 75%;
-   left: 40%;
-   animation: quiz-logo 2s 2;
-}
-
-@keyframes quiz-logo {
-    0% {
-      transform: rotatez(0);
-    }
-    25% {
-        transform: rotatez(20deg);
-    }
-    50% {
-        transform: rotatez(0);
-    }
-    75% { 
-        transform: rotatez(-20deg);
-    }
-    100% {
-      transform: rotatez(0);
-    }
-  }
-
 /* BUTTONS*/
 .btn-container {
     display: flex;
@@ -112,6 +71,8 @@ body {
     margin-top: 1rem;
 }
 
+/*Inspiration and method for button styles was sourced at 
+https://codemyui.com/comic-book-inspired-dotted-background-text-with-a-dark-shadow-background*/
 .btn {
     width: 8rem;
     height: 3rem;
@@ -140,6 +101,53 @@ body {
     height: 2rem;
 }
 
+/* HEADER*/
+.header-container {
+    position: relative;
+}
+
+.header {
+    font-family: 'Anton', sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    margin: 0.4rem;
+    padding: 0.1rem 0.5rem;
+    background-color: #c62937;
+    color: #fffcf9;
+}
+
+/*Quiz logo animation learnt at https://css-tricks.com/almanac/properties/t/transform/*/
+.quiz-logo {
+    height: 90%;
+    width: 70%;
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    animation: quiz-logo 2s 2;
+}
+
+@keyframes quiz-logo {
+    0% {
+        transform: rotatez(0);
+    }
+
+    25% {
+        transform: rotatez(20deg);
+    }
+
+    50% {
+        transform: rotatez(0);
+    }
+
+    75% {
+        transform: rotatez(-20deg);
+    }
+
+    100% {
+        transform: rotatez(0);
+    }
+}
+
 /*HOW TO PLAY MODAL*/
 .how-to-play-modal {
     position: absolute;
@@ -161,6 +169,7 @@ body {
     position: absolute;
     top: 53%;
 }
+
 /*QUIZ*/
 
 #scoreboard {
@@ -199,6 +208,7 @@ body {
 .quit-question {
     text-align: center;
 }
+
 /*GAME OVER*/
 .final-score {
     margin: 0;

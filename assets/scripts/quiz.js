@@ -59,6 +59,7 @@ function displayQuestion() {
     }
 }
 
+// Set time out learnt at https://www.w3schools.com/js/js_timing.asp
 function checkAnswer(e) {
     if (e.innerHTML == quizQuestions[currentQuestionIndex].correct) {
         background.classList.add("correct");
