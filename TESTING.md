@@ -108,53 +108,54 @@ Responsive testing was completed on the following devices through Chrome dev too
 ### **Homepage**
 |**Feature**|**Expected Result**|**How to Test**|**Result**|**Pass/Fail**|
 |---|---|---|---|---|
-|The Title Logo|Quiz logo swings back and forth twice on initial load|Refresh the page to test|
-|How to play button|Opens the how to play modal|
-|Start Quiz button|Displays the select difficulty container|
-|All buttons in the game display white with black text until hovered, the text will display white and the background will be black|Hover over buttons|
+|The Title Logo|Quiz logo swings back and forth twice on initial load|Refresh the page to test|Quiz logo swings twice|Pass
+|How to play button|Opens the how to play modal|Click How to play button|How to play modal opens|Pass
+|Start Quiz button|Displays the select difficulty container|Click Start Quiz button|Difficulty container opens|Pass
+|All buttons|All buttons in the game display white with black text until hovered, the text will display white and the background will be black|Hover over buttons|Button transformation works when hovered on desktop only as specified in the media queries|Pass
 
 ### **How to Play Modal**
 |**Feature**|**Expected Result**|**How to Test**|**Result**|**Pass/Fail**|
 |---|---|---|---|---|
-|X in top right corner|Closes the modal|Click the X|
-|X in top right corner|Rotates|Hover over the X|
-|Start Quiz button|Displays the select difficulty container|
-|All buttons in the game display white with black text until hovered, the text will display white and the background will be black|Hover over buttons|
+|X in top right corner|Closes the modal|Click the X|How to play modal closes|Pass
+|X in top right corner|Rotates 360 degrees once|Hover over the X|X rotates 360 degrees once|Pass
+|Start Quiz button|Displays the select difficulty container|Click start quiz button|Difficulty container displays|Pass
+|All buttons|All buttons in the game display white with black text until hovered, the text will display white and the background will be black|Hover over buttons|Button transformation works when hovered on desktop only as specified in the media queries|Pass
 
 
 ### **Select Difficulty Container**
 |**Feature**|**Expected Result**|**How to Test**|**Result**|**Pass/Fail**|
 |---|---|---|---|---|
-|Easy button|Takes user to the first question of the quiz using the easy questions|Click Easy button
-|Medium button|Takes user to the first question of the quiz using the medium questions|Click Medium button
-|Hard button|Takes user to the first question of the quiz using the hard questions|Click Hard button
-|All buttons in the game display white with black text until hovered, the text will display white and the background will be black|Hover over buttons|
+|Easy button|Takes user to the first question of the quiz using the easy questions|Click Easy button|First question of the easy set displays|Pass
+|Medium button|Takes user to the first question of the quiz using the medium questions|Click Medium button|First question of the medium set displays|Pass
+|Hard button|Takes user to the first question of the quiz using the hard questions|Click Hard button|First question of the hard set displays|Pass
+|All buttons|All buttons in the game display white with black text until hovered, the text will display white and the background will be black|Hover over buttons|Button transformation works when hovered on desktop only as specified in the media queries|Pass
 
 ### **Quiz Container**
 |**Feature**|**Expected Result**|**How to Test**|**Result**|**Pass/Fail**|
 |---|---|---|---|---|
-|Score Counter|Increases the score by one for each correct answer only|Select correct answer first then select incorrect answer to make sure the score doesn't increase|
-|X in top right corner|Displays quit quiz modal|Click the X|
-|X in top right corner|Rotates|Hover over the X|
-|Quiz Question|Will load the next question after an answer is chosen and the checkAnswer function has executed. If there are no more questions the Game Over container displays.|console.log question content to make sure the question is populating.
-|Choices buttons|The displayQuestion function executes a loop that populates the choices based on the current question index|console.log button should log four buttons|
-|Correct Answer|The correct answer has a dataset of true|Console.log button will show the correct answer with a dataset of true|
-|Incorrect Answers|Have no dataset added|Console.log button should show the three incorrect answers have no dataset|
-|Correct Answer selected|Background changes to green, score increments and next question displays with choices|Click correct answer|
-|Incorrect Answer selected|Background changes to red, no score increase and next question displays with choices|Click incorrect answer|
-|All buttons in the game display white with black text until hovered, the text will display white and the background will be black|Hover over buttons|
+|Score Counter|Increases the score by one for each correct answer only|Select correct answer first then select incorrect answer to make sure the score doesn't increase|Score increases for correct answer and stays the same for incorrect answer|Pass
+|X in top right corner|Displays quit quiz modal|Click the X|Quit quiz modal displayed|Pass
+|X in top right corner|Rotates 360 degrees once|Hover over the X|X rotates 360 degrees once only on desktop as stated in media quries|Pass
+|Quiz Question|Will load the next question after an answer is chosen and the checkAnswer function has executed. If there are no more questions the Game Over container displays.|console.log question content to make sure the question is populating.|Next question displays up to ten questions when game over container displays|Pass
+|Choices buttons|The displayQuestion function executes a loop that populates the choices based on the current question index|console.log button should log four buttons|The four buttons created logs|Pass
+|Correct Answer|The correct answer has a dataset of true|Console.log button will show the correct answer with a dataset of true|The correct answer to each questions logs with a dataset of true|Pass
+|Incorrect Answers|Have no dataset added|Console.log button should show the three incorrect answers have no dataset|Incorrect answers to each question log with no dataset|Pass
+|Correct Answer selected|Background changes to green, score increments and next question displays with choices|Click correct answer|Background changes to green for each correct answer across all questions, the score also increments and the next question is displayed until the end of the game where the game over container appears|Pass
+|Incorrect Answer selected|Background changes to red, no score increase and next question displays with choices|Click incorrect answer|For each incorrect answer the background changes to red, the next question is displayed until the end of the game where the game over container appears|Pass
+|All buttons|All buttons in the game display white with black text until hovered, the text will display white and the background will be black|Hover over buttons|Button transformation works when hovered on desktop only as specified in the media queries|Pass
 
 ### **Quit Quiz Modal**
 |**Feature**|**Expected Result**|**How to Test**|**Result**|**Pass/Fail**|
 |---|---|---|---|---|
-|Quit question|Displays each time the quit button is pressed to ask the user if they're sure. This avoids accidental quitting|Click X to quit quiz|
-|Yes button|Quits the quiz and takes the user back to the start displaying how to play and start quiz buttons|Click yes button|
-|No button|Closes the quit quiz modal and returns to the game where the user left off|Click no button|
-|All buttons in the game display white with black text until hovered, the text will display white and the background will be black|Hover over buttons|
+|Quit question|Displays each time the quit button is pressed to ask the user if they're sure. This avoids accidental quitting|Click X in quiz container to quit quiz|Quit question container displays|Pass
+|Yes button|Quits the quiz and takes the user back to the start displaying how to play and start quiz buttons|Click yes button|All containers close, how to play button and start quiz button display|Pass
+|No button|Closes the quit quiz modal and returns to the game where the user left off|Click no button|Quit quiz container closes and the quiz is resumed|Pass
+|All buttons|All buttons in the game display white with black text until hovered, the text will display white and the background will be black|Hover over buttons|Button transformation works when hovered on desktop only as specified in the media queries|Pass
 
 ### **Game Over**
 |**Feature**|**Expected Result**|**Test Performed**|**Result**|**Pass/Fail**|
 |---|---|---|---|---|
-|Final Score|Displays final score|Console.log score to make sure the final score is the same|
-|Play Again button|Displays select difficulty container|Click Play Again button|
-|Home button|Closes the game over container and takes the user back to the start displaying how to play and start quiz buttons|Click Home button|
+|Final Score|Displays final score|Console.log score to make sure the final score is the same|Both scores match each time|Pass
+|Play Again button|Displays select difficulty container|Click Play Again button|select difficulty container displays|Pass
+|Home button|Closes the game over container and takes the user back to the start displaying how to play and start quiz buttons|Click Home button|All containers close, how to play button and start quiz button display|Pass
+|All buttons|All buttons in the game display white with black text until hovered, the text will display white and the background will be black|Hover over buttons|Button transformation works when hovered on desktop only as specified in the media queries|Pass
