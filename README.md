@@ -104,6 +104,8 @@ ___
 
 [Google Fonts](https://fonts.google.com/) used to import all fonts used on the website.
 
+[Inkscape](https://inkscape.org/) used to create the three background and the quiz logo.
+
 # **Deployment**
 Marvel Quiz live website was deployed using GitHub Pages.
 
@@ -137,9 +139,33 @@ Marvel Quiz live website was deployed using GitHub Pages.
 # **Credits**
 
 ## **Content**
+The quiz questions are a mixture of ones created by myself and the below links.
+
+[Quiz quesions](https://icebreakerideas.com/marvel-trivia/) used for some of the quiz questions in the game.
+
+[Quiz quesions](https://www.rd.com/article/marvel-trivia/) used for other quiz questions in the game.
 
 ## **Media**
+[Logos by Nick](https://logosbynick.com/inkscape-comic-book-logo/) was used to create the quiz logo with inkscape. I later used the skills learnt in this tutorial to create the halftone backgrounds.
 
 ## **Code**
+[Free Code Camp](https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/) was used to learn how to create JS modals.
+
+[W3Schools](https://www.w3schools.com/js/js_timing.asp) was used to learn how to set the timeout function for correct and incorrect background changes.
+
+[JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript) was used throughout development to refresh and explore new solutions.
+
+[CSS Tricks](https://css-tricks.com/almanac/properties/t/transform/) was used to refresh on animations and transformations used for the game.
+
+[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) used to refresh on the use of flexbox.
+
+[Comic Style Border](https://codepen.io/mp/pen/kBEeKw) was used to for the border to all containers.
+
+[Comic Style Buttons](https://codemyui.com/comic-book-inspired-dotted-background-text-with-a-dark-shadow-background/) was the source of inspiration and method behind the buttons.
 
 ## **Acknowledgments**
+Cohort facilitator Iris Smok for all her help and support with out cohort.
+
+My mentor Chris Quinn for the words "Make it work, then make it pretty".
+
+My wife for her brilliant Marvel knowledge, not to mention her patience and support.
