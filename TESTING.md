@@ -98,8 +98,10 @@ Responsive testing was completed on the following devices through Chrome dev too
 <img src="testing/testing-images/responsive-testing-ipadair-3.webp" height="350"/>  
 
 **Desktop**
-- 1024px
-- 1440px
+
+<img src="testing/testing-images/responsive-testing-desktop-1.webp" height="350"/>
+<img src="testing/testing-images/responsive-testing-desktop-2.webp" height="350"/>
+<img src="testing/testing-images/responsive-testing-desktop-3.webp" height="350"/>
 
 ## **Feature Testing**
 
