@@ -1,19 +1,18 @@
-const easy = [
-    {
+const easy = [{
         "question": "How many infinity stones are there in the Marvel Universe?",
-        "choices": ["10","6","3","8"],
+        "choices": ["10", "6", "3", "8"],
         "correct": "6"
     },
- 
+
     {
         "question": "What is the name of the cube that Loki utilizes to power up his weapons?",
-        "choices": ["Tetracube", "Trimurti","Trimeric","Tesseract"],
+        "choices": ["Tetracube", "Trimurti", "Trimeric", "Tesseract"],
         "correct": "Tesseract"
     },
 
     {
         "question": "Which country is the birthplace of Black Widow?",
-        "choices": ["Canada" ,"America" ,"South Africa" ,"Russia"],
+        "choices": ["Canada", "America", "South Africa", "Russia"],
         "correct": "Russia"
     },
 
@@ -60,8 +59,7 @@ const easy = [
     }
 ];
 
-const medium = [
-    {
+const medium = [{
         "question": "Who is the brother of Scarlet Witch?",
         "choices": ["Quicksilver", "Mercury", "Cobalt", "Aluminium"],
         "correct": "Quicksilver"
@@ -122,8 +120,7 @@ const medium = [
     },
 ];
 
-const hard = [
-    {
+const hard = [{
         "question": "Who kills Aunt May in Spider-Man: No Way Home?",
         "choices": ["Dr Octopus", "Electro", "Lizard", "Green Goblin"],
         "correct": "Green Goblin"
