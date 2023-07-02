@@ -72,9 +72,25 @@ Responsive testing was completed on the following devices through Chrome dev too
 <img src="testing/testing-images/responsive-testing-iphonex-3.webp" height="350"/>
 
 - Samsung ZFlip 3
+    - Chrome Browser
+
+        <img src="testing/testing-images/responsive-testing-samsungzflip-1-chrome.webp" height="350"/>
+        <img src="testing/testing-images/responsive-testing-samsungzflip-2-chrome.webp" height="350"/>
+        <img src="testing/testing-images/responsive-testing-samsungzflip-3-chrome.webp" height="350"/>
+
+    - Samsung Browser
+
+        <img src="testing/testing-images/responsive-testing-samsungzflip-1.webp" height="350"/>
+        <img src="testing/testing-images/responsive-testing-samsungzflip-2.webp" height="350"/>
+        <img src="testing/testing-images/responsive-testing-samsungzflip-3.webp" height="350"/>
 
 **Tablet**
 - iPad Mini
+
+<img src="testing/testing-images/responsive-testing-ipadmini-1.webp" height="350"/>
+<img src="testing/testing-images/responsive-testing-ipadmini-2.webp" height="350"/>
+<img src="testing/testing-images/responsive-testing-ipadmini-3.webp" height="350"/>  
+  
 - iPad Air
 
 **Desktop**
