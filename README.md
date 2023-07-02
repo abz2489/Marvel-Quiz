@@ -68,6 +68,19 @@ The project consists of one single page and changes states using JavaScript DOM 
 </details>
 
 ## **Surface**
+### **Colour Scheme**
+
+<img src="testing/readme-images/marvel-quiz-colour-scheme.webp" height="400"/> 
+
+### **Typography**
+All typography for the project has been sourced from [Google Fonts](https://fonts.google.com/).
+
+#### **Marvel Logo**
+Anton, Regular 400 -chosen as a similar font to the font used in the Marvel logo.
+
+#### **All other content**
+Bangers, Regular 400 - chosen to emulate a comic book feel to the website.
+
 
 ___
 
