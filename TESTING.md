@@ -90,8 +90,12 @@ Responsive testing was completed on the following devices through Chrome dev too
 <img src="testing/testing-images/responsive-testing-ipadmini-1.webp" height="350"/>
 <img src="testing/testing-images/responsive-testing-ipadmini-2.webp" height="350"/>
 <img src="testing/testing-images/responsive-testing-ipadmini-3.webp" height="350"/>  
-  
-- iPad Air
+
+- ipad Air
+
+<img src="testing/testing-images/responsive-testing-ipadair-1.webp" height="350"/>
+<img src="testing/testing-images/responsive-testing-ipadair-2.webp" height="350"/>
+<img src="testing/testing-images/responsive-testing-ipadair-3.webp" height="350"/>  
 
 **Desktop**
 - 1024px
