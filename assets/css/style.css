@@ -109,7 +109,7 @@ body {
 .btn-container {
     display: flex;
     flex-flow: row nowrap;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .btn {
@@ -270,7 +270,7 @@ body {
     }
 }
 
-@media (min-width: 820px) and (max-width: 1000px) {
+@media (min-width: 820px) {
     * {
         font-size: 1.5rem;
     }
@@ -291,5 +291,42 @@ body {
 
     .difficulty-container {
         top: 65%;
+    }
+}
+
+@media (min-width: 1024px) {
+    * {
+        font-size: 1.2rem;
+    }
+
+    .large-font {
+        font-size: 1.3rem;
+    }
+
+    .extra-large-font {
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        width: 9rem;
+        height: 3rem;
+    }
+
+    .container {
+        width: 310px;
+        height: 435px;
+        top: 65%;
+    }
+
+    .how-to-play-modal {
+        top: 55%;
+    }
+
+    .header {
+        font-size: 5rem;
+    }
+
+    .difficulty-container {
+        top: 55%;
     }
 }
