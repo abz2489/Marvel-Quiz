@@ -115,11 +115,23 @@ The quiz container consists of the user's score, a quit button (top right), quiz
 ![Quiz](testing/readme-images/quiz-container.webp)
 </details>
 
+<details><summary>Correct Answer</summary>
+When the user selects the right answer the background changes to green for 350 milliseconds. The score counter will increase by one point.
+
+![Correct Answer](testing/readme-images/correct-answer.webp)
+</details>
+
+<details><summary>Wrong Answer</summary>
+When the user selects the wrong answer the background changes to red for 350 milliseconds. The correct answer won't display to encourage the user to play again.
+
+![Wrong Answer](testing/readme-images/incorrect-answer.webp)
+</details>
+
 <details><summary>Quit Button</summary>
 The quit button in all containers that have one rotates 360 degrees when hovered over. As the button is small this will draw the 
 user's attention.
 
-![Quit Button](testing/testing-images/marvel-quiz-html-validation.webp)
+![Quit Button](testing/readme-images/quit-button.webp)
 </details>
 
 <details><summary>Game Over</summary>
@@ -132,6 +144,12 @@ The game over container let's the user know that the quiz is over and displays t
 When the user presses the quit button within the quiz the quiz question container will appear. This will alleviate any accidental quitting during the quiz.
 
 ![Quit Question](testing/readme-images/quit-question.webp)
+</details>
+
+<details><summary>All buttons</summary>
+All buttons have a hover set when not being used on a touch screen device. The image below displays the how to play button in its normal state and the start quiz button in hover state.
+
+![All buttons](testing/readme-images/button-hover-state.webp)
 </details>
 ___
 
