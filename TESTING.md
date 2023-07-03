@@ -32,10 +32,38 @@
 # **Validation Testing**
 
 ## **HTML Validation**
+<details><summary>index.html</summary>
+
+![HTML validation result](testing/testing-images/marvel-quiz-html-validation.webp)
+
+</details>
 
 ## **CSS Validation**
+<details><summary>style.css</summary>
+
+![CSS validation result](testing/testing-images/marvel-quiz-css-validation.webp)
+
+</details>
 
 ## **JavaScript Validation**
+<details><summary>modal.js</summary>
+Passed - It states four undefined variables and nine unused variables. The undefined variables are defined have been defined in quiz.js.
+
+![JSHINT Validation](testing/testing-images/marvel-quiz-jshint-validation-modaljs.webp)
+</details>
+
+<details><summary>questions.js</summary>
+Passed - It states three unused variables that are being used.
+
+![JSHINT Validation](testing/testing-images/marvel-quiz-jshint-validation-questionsjs.webp)
+</details>
+
+<details><summary>quiz.js</summary>
+First test showed 5 unused variables that have been removed.
+Passed - Shows one undefined variable which is defined in modal.js. Also shows three unused variables which are called through onclick events in index.html.
+
+![JSHINT Validation](testing/testing-images/marvel-quiz-jshint-validation-quizjs.webp)
+</details>
 
 ## **Lighthouse Testing**
 
