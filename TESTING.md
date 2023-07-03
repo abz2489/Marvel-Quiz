@@ -73,18 +73,20 @@ ___
 
 ## **User Stories Testing**
 
-|**User Need**|**Achieved?**|
-|---|---|
-|As a user I want to quickly identify what sort of game it is.| The page logo displays on initial load and is clear to the user.
-|As a user I want to learn how to play easily.| On initial load the "How to Play" button is displayed clearly in the center.
-|As a user I want to access the "Start Quiz" button easily.| On initial load the "Start Quiz" button is displayed clearly in the center. There is also a "Start Quiz" button within the How to Play modal.
-|As a user I want to be able to select different levels of difficulty.| When "Start Quiz" is pressed the user is prompted to select a level of difficulty.
-|As a user I want to track my score as I play.| With each correct answer the score counter increases by one point and displays at the top of the quiz container. The final score is displayed in the game over container at the end of the quiz.
-|As a user I want to be able to quit the game.| The game has a clear X in the top right corner of the container that will rotate when hovered. When pressed the user is prompted with the "Are you sure you want to quit?" container to avoid accidental quitting.
-|As a user I want to be alerted when I get the answer right or wrong.| When the user answers correctly the backround changes to green. When the user answers incorrectly the background changes to red.
+|**User Need**|**Achieved?**|**How?**
+|---|---|---|
+|As a user I want to quickly identify what sort of game it is.|Yes| The page logo displays on initial load and is clear to the user.
+|As a user I want to learn how to play easily.|Yes| On initial load the "How to Play" button is displayed clearly in the center.
+|As a user I want to access the "Start Quiz" button easily.|Yes| On initial load the "Start Quiz" button is displayed clearly in the center. There is also a "Start Quiz" button within the How to Play modal.
+|As a user I want to be able to select different levels of difficulty.|Yes| When "Start Quiz" is pressed the user is prompted to select a level of difficulty.
+|As a user I want to track my score as I play.|Yes| With each correct answer the score counter increases by one point and displays at the top of the quiz container. The final score is displayed in the game over container at the end of the quiz.
+|As a user I want to be able to quit the game.|Yes| The game has a clear X in the top right corner of the container that will rotate when hovered. When pressed the user is prompted with the "Are you sure you want to quit?" container to avoid accidental quitting.
+|As a user I want to be alerted when I get the answer right or wrong.|Yes| When the user answers correctly the backround changes to green. When the user answers incorrectly the background changes to red.
 
 ## **Responsiveness**
 Responsive testing was completed on the following devices through Chrome dev tools. Samsung ZFlip 3 was tested live on the device using both the Chrome browser and the Samsung browser.
+
+The feature testing was also completed on all of the following devices and worked as expected.
 
 **Mobile:**
 - iPhone 6/7/8
