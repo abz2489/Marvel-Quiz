@@ -1,5 +1,7 @@
 <h1 style="text-align:center; font-size:40px">Marvel Quiz - Testing</h1>
 
+[View the Marvel Quiz live website here](https://abz2489.github.io/marvel-quiz/)
+
 # **Bugs & Fixes**
 1. Modal obstructs quiz container when start quiz button within how to play modal is clicked. Fixed by adding hidden class to the modal within the loadQuiz function.
 
