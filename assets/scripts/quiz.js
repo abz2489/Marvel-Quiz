@@ -2,19 +2,15 @@
 const howToPlayBtn = document.querySelector(".btn-how-to-play");
 const startQuizBtn = document.querySelector(".btn-start-quiz");
 const quizContainer = document.querySelector(".quiz-container");
-const scoreboard = document.querySelector("#scoreboard");
 const scoreCounter = document.querySelector(".score-counter");
-const quitGame = document.querySelector(".quit-game");
 const questionContent = document.querySelector("#question");
-const nextButton = document.querySelector("#next-btn");
 const choicesContainer = document.querySelector(".choices-container");
 const gameOverContainer = document.querySelector(".game-over-container");
 const finalScore = document.querySelector(".final-score");
-const playAgainBtn = document.querySelector(".play-again-btn");
 const background = document.querySelector("body");
 const difficultyContainer = document.querySelector(".difficulty-container");
 
-let button, score, currentQuestionIndex, currentQuestion, quizQuestions;
+let button, score, currentQuestionIndex, quizQuestions;
 
 function selectDifficulty() {
     difficultyContainer.classList.remove("hidden");
