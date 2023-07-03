@@ -68,7 +68,15 @@ Passed - Shows one undefined variable which is defined in modal.js. Also shows t
 </details>
 
 ## **Lighthouse Testing**
+<details><summary>Mobile</summary>
 
+![Lighthouse Mobile](testing/testing-images/lighthouse-mobile.webp)
+</details>
+
+<details><summary>Desktop</summary>
+
+![Lighthouse Desktop](testing/testing-images/lighthouse-desktop.webp)
+</details>
 ___
 
 # **Manual Testing**
