@@ -1,4 +1,8 @@
-<h1>Marvel Quiz</h1>
+<h1 style="text-align:center; font-size:40px">Marvel Quiz</h1>
+
+<img src="testing/readme-images/marvel-quiz.webp" height="600"/>
+
+[View the Marvel Quiz live website here](https://abz2489.github.io/marvel-quiz/)
 
 # **UX/UI**
 
@@ -85,7 +89,50 @@ Bangers, Regular 400 - chosen to emulate a comic book feel to the website.
 ___
 
 # **Features**
+Marvel Quiz is a single page website that makes use of multiple containers and the display property to navigate them. As a result, there is no navbar or footer.
 
+<details><summary>Header</summary>
+The Marvel header was inspired by the usual Marvel logo but using a different font and colour. The quiz header is a custom design, created in Inkscape, designed to replicate a comic style explosion. The quiz logo swings back and fourth twice on initial load.
+
+![Header Logo](testing/readme-images/marvel-quiz-header.webp)
+</details>
+
+<details><summary>How to Play Modal</summary>
+Consists of a brief explanation to the user, a quit modal button (top right) and a start quiz button at the bottom.
+
+![How to Play](testing/readme-images/how-to-play-modal.webp)
+</details>
+
+<details><summary>Select Difficulty</summary>
+The quiz has three sets of questions; easy, medium and hard. This is where the user selects which set they'd like to complete. There is also a quit button in the top right to take users back to the initial load screen.
+
+![Select Difficulty](testing/readme-images/select-difficulty-container.webp)
+</details>
+
+<details><summary>Quiz</summary>
+The quiz container consists of the user's score, a quit button (top right), quiz question and four multiple choice buttons
+
+![Quiz](testing/readme-images/quiz-container.webp)
+</details>
+
+<details><summary>Quit Button</summary>
+The quit button in all containers that have one rotates 360 degrees when hovered over. As the button is small this will draw the 
+user's attention.
+
+![Quit Button](testing/testing-images/marvel-quiz-html-validation.webp)
+</details>
+
+<details><summary>Game Over</summary>
+The game over container let's the user know that the quiz is over and displays their final score along with a play again button and a home button. The paly again button will display the select difficulty container and the home button takes the user back to the inital load screen.
+
+![Game Over](testing/readme-images/game-over-container.webp)
+</details>
+
+<details><summary>Quit Question</summary>
+When the user presses the quit button within the quiz the quiz question container will appear. This will alleviate any accidental quitting during the quiz.
+
+![Quit Question](testing/readme-images/quit-question.webp)
+</details>
 ___
 
 # **Technologies Used**
@@ -105,6 +152,8 @@ ___
 [Google Fonts](https://fonts.google.com/) used to import all fonts used on the website.
 
 [Inkscape](https://inkscape.org/) used to create the three background and the quiz logo.
+
+[Coolors](https://coolors.co/) used to build the colour palette.
 
 # **Deployment**
 Marvel Quiz live website was deployed using GitHub Pages.
@@ -135,6 +184,8 @@ Marvel Quiz live website was deployed using GitHub Pages.
 - In the Build and Deployment section select the main branch and root folder.
 - Click Save, the live website is now deployed.
 
+# **Testing**
+All tests can be found at [TESTING.md](TESTING.md).
 
 # **Credits**
 
@@ -162,6 +213,8 @@ The quiz questions are a mixture of ones created by myself and the below links.
 [Comic Style Border](https://codepen.io/mp/pen/kBEeKw) was used to for the border to all containers.
 
 [Comic Style Buttons](https://codemyui.com/comic-book-inspired-dotted-background-text-with-a-dark-shadow-background/) was the source of inspiration and method behind the buttons.
+
+[Hover effects media query](https://medium.com/@mezoistvan/finally-a-css-only-solution-to-hover-on-touchscreens-c498af39c31c) code was used to alter the hover effects to not affect touch screen displays.
 
 ## **Acknowledgments**
 Cohort facilitator Iris Smok for all her help and support with out cohort.
