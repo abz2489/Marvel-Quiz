@@ -215,8 +215,9 @@ https://codemyui.com/comic-book-inspired-dotted-background-text-with-a-dark-shad
 }
 
 /*MEDIA QUERIES*/
-
-@media (hover:hover) {
+/*Code to hover on screens that aren't touchscreen found at 
+https://medium.com/@mezoistvan/finally-a-css-only-solution-to-hover-on-touchscreens-c498af39c31c*/
+@media (hover:hover) and (pointer:fine) {
     .btn {
         transition-property: background-color, color;
         transition-duration: 0.5s;
